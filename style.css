@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+h1{
+    background-color: #7C6C77;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    line-height: 5rem;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    gap: 29px;
+    
+    
+    
+}
+.choice{
+    height: 145px;
+    width: 145px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.choice:hover{
+    opacity:  0.5;
+    background-color: rgba(0, 8, 38, 0.932);
+    
+}
+img{
+    height: 120px;
+    width: 120px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.score-bord{
+    display: flex;
+    justify-content: center;
+    margin-top: 05rem;
+    gap: 10rem;
+    font-size: 2rem;
+}
+.score{
+    color:#30292e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#user-score , #comp-score{
+    font-size: 2rem;
+}
+.msg-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+#msg{
+    background-color:#3c353a ;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+.hint{
+    display: flex;
+    justify-content: center;
+    
+}
+.hint p{
+    background-color:#3c353a ;
+    color: #fff;
+    
+    padding: 5px;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 480px) {
+    .choices {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 19px;
+        align-items: center;
+    }
+    #msg{
+        font-size: 15px;
+    }
+    .score-bord {
+        display: flex;
+        justify-content: center;
+        margin-top: 02rem;
+        gap: 5rem;
+        font-size: 1.5rem;
+    }
+    .msg-container {
+        display: flex;
+        justify-content: center;
+        margin: -14px 0px;
+    }
+    #user-score, #comp-score {
+        font-size: 1.5rem;
+    }
+    img {
+        height: 87px;
+        width: 87px;
+    }
+    .choice {
+        height: 100px;
+        width: 100px;
+    }
+    .hint p {
+        background-color: #3c353a;
+        color: #fff;
+        padding: 12px;
+        margin: 37px;
+        border-radius: 5px;
+        font-size: 0.9rem;
+    }
+}
